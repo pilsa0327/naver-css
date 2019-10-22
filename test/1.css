@@ -1,0 +1,167 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 0;
+}
+#page {
+    display: grid;
+    width: 100%;
+    height: 250px;
+    grid-template-areas: "head head"
+                         "main  nav"
+                         "foot  foot";
+    grid-template-rows: 200px 1450px 50px;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+}
+
+#page > header {
+    grid-area: head;
+}
+
+#page > nav {
+    grid-area: nav;0
+}
+
+#page > main {
+    grid-area: main;
+}
+
+#page > footer {
+    grid-area: foot;
+    background-color: #8cffa0;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows : 1fr 4fr 2fr;
+    
+}
+.nav1{
+display: grid;
+grid-gap: 5px;
+grid-template-rows: 150px 150px 150px 850px 150px;
+
+}
+.nav1 > div{
+border : 1px solid gray;
+}
+
+.nav1 > .nav5 .user-info > .text{
+    display: inline;
+}
+
+.nav1 > .nav5 .user-info > .text.left {
+    float: left;
+}
+
+.nav1 > .nav5 .user-info > .text.right {
+    float: right;    
+}
+
+.nav2{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 150px 50px 250px 850px 150px;
+   
+}
+
+.nav2 > div{
+border : 1px solid gray;
+}
+
+.nav2 .list-view {
+    overflow-y: scroll;
+}
+  
+.card{
+    width : 49%;
+    
+}
+
+img.card {
+    height: 70px;
+    border: 1px solid gray !important;
+}
+
+.text {
+    font-size : 15px;
+}
+
+.nav3{
+    display: grid;
+    grid-template-rows: 40px 197px 191px 191px 191px;
+    grid-gap: 5px;
+    padding : 3px 5px;
+}
+
+.nav4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3px;
+}
+
+.nav5{
+    display: grid;
+    grid-template-rows: 35px 55px 45px;
+    padding : 15px 0 15px 36px;
+}
+
+.image1{
+    height: 180px;
+    width : 177px;
+    background-image: url("./farm.png");                        
+}
+.image2{
+    height: 110px;
+    width : 177px;
+}
+
+
+.selector {
+    word-break:break-all;
+}
+
+.list {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 660px;
+    line-height: 40px; 
+    border-bottom: 1px solid gray;
+
+}
+
+.button1 {
+    /* position: absolute;
+    align-items: right; */
+}
+
+@media screen and (min-width: 780px) { 
+    .card{
+        width : 40%;
+        
+    }
+}
+
+@media screen and (min-width: 920px) { 
+    .card{
+        width : 30%;
+        
+    }
+}
+
+@media screen and (min-width: 1200px) { 
+    .card{
+        width : 16.66%;
+        
+    }
+}
+ul {
+    list-style: none;
+}
+li {
+    list-style: none ;
+    float: left;
+}
+
